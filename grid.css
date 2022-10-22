@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: azure;
+}
+main{
+    display:grid;
+    grid-template-areas: 'a a b c'
+                         'd e e c'   ;
+}
+.item-a{
+    background-color: blueviolet; padding: 50px; grid-area: a;
+}
+.item-b{
+    background-color: gray; padding: 50px; grid-area: b;
+}
+.item-c{
+    background-color: white; padding: 50px; grid-area: c;
+}
+.item-d{
+    background-color: white; padding: 50px;  grid-area: d;
+}
+.item-e{
+    background-color: rgb(78, 76, 76); padding: 50px; grid-area: e;
+}
