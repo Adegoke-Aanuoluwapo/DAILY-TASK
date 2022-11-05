@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object</title>
+</head>
+<body>
+    <h1>JavaScript Object</h1>
+    <h2>Object</h2>
+    
+    <p id="demo"></p>
+    <script>
+    const car = {type:"Fiat", model: "500", color: "white"};
+        document.getElementById("demo").innerHTML = "The car type is " + car.type;
+    </script>
+    <p id="owner"></p>
+    <script>
+        const person = {
+            firstName: "Adigun", lastName: "Adebanji", age: 50, eyecolor: "blue",
+            
+        };
+        document.getElementById("owner").innerHTML = "The owner of the car is " + person.firstName + " "+ person.lastName;
+       
+    </script>
+    <p id="dim"></p>
+    <script>
+        const student= {
+            firstName: "Adigun", lastName: "Adebanji", age: 50, eyecolor: "blue",
+        fullName: function(){
+                return this.firstName + " " + this.lastName;
+            }
+        };
+         document.getElementById("dim").innerHTML = student.fullName();
+    </script>
+    <button onclick = "document.getElementById('demo').innerHTML = Date()">The date is?</button>
+    <p id="demo"></p>
+</body>
+</html>
