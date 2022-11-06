@@ -7,7 +7,12 @@
     
     <script>
         function hello(){
+            let heading
+            if (document.querySelector('h1').innerHTML === 'Hello!'){
             document.querySelector("h1").innerHTML = 'Good bye Danke'
+            } else{
+                document.querySelector('h1').innerHTML = 'Hello!'
+            }
         }
     </script>
 </head>
