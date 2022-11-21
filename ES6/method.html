@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- <script>
+class Car{
+    constructor(name) {
+        this.brand = name;
+    }
+    present(){
+        return 'I have a ' + this.brand;
+    }
+}    
+class Model extends Car{
+    constructor(name, mod){
+        super(name);
+        this.model = mod;
+    }
+    show() {
+        return this.present() + ', it is a ' + this.model
+    }
+}
+const mycar = new Model("Ford", "Mustang");
+document.write(mycar.show());
+</script> -->
+<!-- <h1>Functions</h1>
+<p>This demonstrates a regular function, NOT an arrow function</p>
+<p id="demo"></p>
+<script>
+    hello = function (){
+        return "Hello World!";
+    }
+    document.getElementById("demo").innerHTML = hello();
+</script> -->
+<!-- <h1>Arrow Function</h1>
+<p>A demonstration of a simple arrow function.</p>
+<p id="demo"></p>
+<script>
+hello = () => {
+     return "Hello World!";
+}
+document.getElementById("demo").innerHTML = hello();
+</script> -->
+<!-- <h1>Arrow Function</h1>
+<h2>Implicit Return</h2>
+<p>The arrow function expects a return value, and returns the value by default, without the <strong>return</strong> keyword.</p>
+<p id="demo"></p>
+<script>
+hello = () => "Hello World";
+document.getElementById("demo").innerHTML = hello();
+</script> -->
+<!-- <h1>Arrow Function</h1>
+<p>A demonstration of an arrow function in one line, with paramenters.</p>
+<p id="demo"></p>
+<script>
+hello = (aan) => "Hello " + aan;
+document.getElementById("demo").innerHTML = hello("Aanuoluwapo");
+</script> -->
+<p id="demo"></p>
+<button id="btn">click Me</button>
+<script>
+class Header {
+    constructor(){
+        this.color = "Red";
+    }
+//Regular function
+    changeColor = function() {
+        document.getElementById("demo").innerHTML += this;
+    }
+}
+const myheader = new Header();
+window.addEventListener("load", myheader.changeColor);
+
+document.getElementById("btn").addEventListener("click", myheader.changeColor);
+</script>
+</body>
+</html>
