@@ -60,7 +60,7 @@ document.getElementById("demo").innerHTML = hello();
 hello = (aan) => "Hello " + aan;
 document.getElementById("demo").innerHTML = hello("Aanuoluwapo");
 </script> -->
-<p id="demo"></p>
+<!-- <p id="demo"></p>
 <button id="btn">click Me</button>
 <script>
 class Header {
@@ -76,6 +76,44 @@ const myheader = new Header();
 window.addEventListener("load", myheader.changeColor);
 
 document.getElementById("btn").addEventListener("click", myheader.changeColor);
+</script> -->
+<!-- <p id="demo"></p>
+<script>
+const vehicleOne = {
+    brand:'Ford',
+    type: 'Mustang',
+    year: 'car',
+    color: 'red',
+    model: 'Mustang'
+}
+</script> -->
+<!-- <script>
+const numbersOne = [1, 2, 3];
+const numbersTwo = [4, 5, 6];
+const numbersCombined = [...numbersOne, ...numbersTwo];
+document.write(numbersCombined);
+</script> -->
+<!-- <script>
+const numbers = [1, 2, 3, 4, 5, 6];
+const [one, two, three, ...rest] = numbers;
+document.write("<p>" + one + "</p>");
+document.write("<p>" + two + "</p>");
+document.write("<p>" + three + "</p>");
+document.write("<p>" + rest + "</p>");
+</script> -->
+<script>
+const myVehicle = {
+    brand: 'Ford',
+    model: 'Mustang',
+    color: 'red'
+}
+const updateMyVehiccle = {
+    type: 'car',
+    year: '2021',
+    color: 'yellow'
+}
+const myUpdateVehicle = {...myVehicle, ...updateMyVehicle}
+console.log(myUpdateVehicle);
 </script>
 </body>
 </html>
