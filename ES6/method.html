@@ -101,19 +101,48 @@ document.write("<p>" + two + "</p>");
 document.write("<p>" + three + "</p>");
 document.write("<p>" + rest + "</p>");
 </script> -->
-<script>
+<!-- <script>
 const myVehicle = {
     brand: 'Ford',
     model: 'Mustang',
     color: 'red'
 }
-const updateMyVehiccle = {
+const updateMyVehicle = {
     type: 'car',
     year: '2021',
     color: 'yellow'
 }
 const myUpdateVehicle = {...myVehicle, ...updateMyVehicle}
 console.log(myUpdateVehicle);
+</script> -->
+<!-- <p id="demo"></p>
+<script type="module">
+import { name, age} from "./person.js";
+document.getElementById("demo").innerHTML = "My name is " + name;
+document.getElementById("demo").innerHTML += ", I am "+ age + "."; -->
+<!-- <p id="demo"></p>
+
+<script type="module">
+import { name, age } from "./person.js";
+
+document.getElementById("demo").innerHTML = "My name is " + name;
+document.getElementById("demo").innerHTML += ", I am " + age + "."; -->
+<h1 id="demo"></h1>
+<script>
+function renderApp() {
+    document.getElementById("demo").innerHTML = "Welcome";
+}
+
+function renderLogin(){
+    document.getElementById("demo").innerHTML = "Please log in";
+}
+let authenticated = false;
+if (authenticated) {
+    renderApp();
+}else {
+    renderLogin();
+}
+</script>
 </script>
 </body>
 </html>
