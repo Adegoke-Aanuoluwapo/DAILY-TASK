@@ -83,13 +83,40 @@
 // h1.textContent = "This is an imperative way to program";
 // h1.className = "header";
 // document.getElementById("root").append(h1);
-ReactDOM.render(
-  <h1 className>
-    This is JSX
+// ReactDOM.render(
+//   <h1 className>
+//     This is JSX
+//     <ul>
+//       <li>Bimpe</li>
+//       <li>Theodora</li>
+//     </ul>
+//   </h1>,
+//   document.getElementById("root")
+// );
+// const h1 = document.createElement("h1");
+// h1.textContent = "Hello world";
+// h1.className = "header";
+// console.log(h1);
+
+// const element = <h1 className="header">This is JSX</h1>;
+// console.log(element);
+
+// const page = (
+//   <div>
+//     <h1>This is JSX</h1>
+//     <p>Voila, this is interesting</p>
+//   </div>
+// );
+// console.log(page);
+// ReactDOM.render(page, document.getElementById("root"));
+const Navbar = (
+  <nav>
+    <h1>This is my JSX site</h1>
     <ul>
-      <li>Bimpe</li>
-      <li>Theodora</li>
+      <li>Contact</li>
+      <li>Home</li>
+      <li>Services</li>
     </ul>
-  </h1>,
-  document.getElementById("root")
+  </nav>
 );
+ReactDOM.render(Navbar, document.getElementById("root"));
