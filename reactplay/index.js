@@ -118,6 +118,7 @@ const Navbar = (
       <li>Services</li>
       <li>About</li>
       <li>Offices</li>
+      <li>Shop</li>
     </ul>
   </nav>
 );
